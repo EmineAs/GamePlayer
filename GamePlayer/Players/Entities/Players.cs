@@ -9,7 +9,7 @@ namespace GamePlayer.Entities
         public int Id { get; set; }
         public string FirtsName { get; set; }
         public string LastName { get; set; }
-        public DateTime DateofBirth { get; set; }
+        public DateTime  DateofBirth { get; set; }
         public string NationalityId { get; set; }
 
        

@@ -18,8 +18,8 @@ namespace GamePlayer.Adepter
         public static async Task<bool> TaskAsync(Players player)
         {
             KPSPublicSoapClient client = new KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap12);
-            var durum = await (client.TCKimlikNoDogrulaAsync(Convert.ToInt64(player.NationalityId), player.FirtsName, player.LastName, player.DateofBirth.Year));
-            return durum.Body.TCKimlikNoDogrulaResult;
+            var st = await (client.TCKimlikNoDogrulaAsync(Convert.ToInt64(player.NationalityId), player.FirtsName, player.LastName, player.DateofBirth.Year));
+            return st.Body.TCKimlikNoDogrulaResult;
 
         }
     }
