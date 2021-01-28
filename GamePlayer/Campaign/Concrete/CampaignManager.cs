@@ -85,7 +85,7 @@ namespace GamePlayer.Concrete
                 } while (ans == "E");
 
 
-                Console.WriteLine("KAMPANYA LİSTESİ");
+                Console.WriteLine("KAMPANYA LİSTESİ"); 
                 Console.WriteLine("--------------------------------------------------------------------------");
                 foreach (var item in listcampaign)
                 {
